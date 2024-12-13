@@ -71,7 +71,7 @@ nav li{
 .menu-bar .menu-line{
     height: 2px;
     width: 70%;
-    background-color: black;
+    background-color: #8d6914;
     margin: 2px;
     z-index: 100;
     border-radius: 10px;
@@ -114,6 +114,7 @@ nav li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .section-title{
@@ -125,8 +126,11 @@ nav li{
     font-size: 22px;
 }
 
-.service-div-normal{
+.service-div{
+    width: 100%;
     margin-top: 20px;    
+    display: flex;
+    justify-content: space-evenly;
 }
 .service-title{
     background-color: #8d6914;
@@ -139,12 +143,95 @@ nav li{
 .service-photo{
     height: 300px;
     width: 600px;
-    background-color: #0d2c7a;
+    background-color: #8d6914;
+    border-radius: 3px;
     margin-top: 20px;
 }
 .jetsale-s{
     background: url(../images/home-jetsale-s.jpg);
     background-position: center;
+    background-size: cover;
+}
+.section2{
+    color: black;
+    margin-top: 47px;
+    width: 40%;
+}
+.section2 button{
+    padding: 7px;
+    margin-top: 10px;
+    background-color: #8d6914;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.featured-plane{
+    margin-top: 30px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to left, #030303 20%, #dbd8d5 80%);
+}
+
+.featured-plane-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.featured-title{
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.featured-plane-content .plane-name{
+    font-size: 40px;
+    font-weight: bold;
+    color: #8d6914;
+}
+.featured-plane img{
+    transform: scaleX(-1);
+}
+.plane-specs{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: white;
+}
+.plane-specs span{
+    margin-top: 6px;
+}
+
+/* privatejet-service*/
+
+.privatejet-s{
+    background: url(../images/privatejet-board-s.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*Heli charter */
+.helicopter-charter-s{
+    background: url(../images/home-heli-s.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+/*cargo services*/
+.cargo-s{
+    background: url(../images/home-cargo-s.jpg);
+    background-position: top;
     background-size: cover;
 }
 
