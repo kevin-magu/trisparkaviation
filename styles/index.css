@@ -1,5 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
 .homepage{
-    background: url(../videos/1212\ \(1\).mp4);
-    height: 90vh;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.homepage-vid{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    color: #8d6914;
+    font-weight: 600;
     width: 100%;
 }
+
+nav  img{
+   margin-right: 20px;
+   width: 250px;
+   margin-left: 10px;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul a{
+    color: #8d6914;
+    margin-left: 100px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+nav li{
+    list-style: none;
+    width: fit-content;
+}
+
+.menu-bar{
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 100;
+    right: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-bar .menu-line{
+    height: 2px;
+    width: 70%;
+    background-color: black;
+    margin: 2px;
+    z-index: 100;
+    border-radius: 10px;
+}
+.white-overlay{
+  position: absolute;
+  bottom: 0; /* Start from the bottom */
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the parent */
+  background-color: white;
+  z-index: 0; /* Make sure it stays below the content */
+  opacity: 40%;
+}
+.hero-text{
+    font-size: 55px;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 150;
+    color: #8d6914;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero-text span{
+    background-color: white;
+    height: fit-content;
+    font-size: 50px;
+    padding: 5px;
+    color: #0d2c7a;
+    width: fit-content;
+    margin-left: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #8d6914;
+    font-size: 22px;
+}
+
+.service-div-normal{
+    margin-top: 20px;    
+}
+.service-title{
+    background-color: #8d6914;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+}
+.service-photo{
+    height: 300px;
+    width: 600px;
+    background-color: #0d2c7a;
+    margin-top: 20px;
+}
+.jetsale-s{
+    background: url(../images/home-jetsale-s.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
