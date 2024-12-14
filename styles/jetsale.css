@@ -11,12 +11,7 @@ nav{
     position: relative;
 }
 
-.page-title{
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 40px;
-    color: #8d6914;
-}
+
 .jets-container{
     margin-top: 20px;
     display: flex;
@@ -31,7 +26,7 @@ nav{
     padding-bottom: 20px;
 }
 .jet-content{
-    padding: 4px;
+    padding: 6px;
 }
 
 .jet-name{
@@ -56,7 +51,7 @@ nav{
     margin-top: 10px;
 }
 .jet-box .jet-spec{
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .jet-box .speed{
     margin-top: 4px;

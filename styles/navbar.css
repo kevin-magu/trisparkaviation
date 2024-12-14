@@ -52,3 +52,11 @@ nav li{
     z-index: 100;
     border-radius: 10px;
 }
+
+/*additional*/
+.page-title{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: #8d6914;
+}

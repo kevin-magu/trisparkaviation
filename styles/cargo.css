@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+nav{
+    position: relative;
+}
+
+.cargo-paragraph{
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 50px;
+}
+
+.book-cargo{
+    margin-left: 50px;
+}
+
+.cargo-images{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.c-image1{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/home-cargo-s.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.c-image2{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/c-image2.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.c-image3{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/c-image3.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.c-image4{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/c-image4.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+section a{
+    background-color: #8d6914;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+}
+
+
