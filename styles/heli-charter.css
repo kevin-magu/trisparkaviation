@@ -10,8 +10,60 @@ body{
 nav{
     position: relative;
 }
+.heli-charter-section{
+    margin-left: 50px;
+}
 .heli-main-content{
     width: 70%;
-    margin-left: 50px;
     margin-top: 20px;
+}
+.page-title{
+    margin-left: 0;
+}
+
+.helicopter-images{
+    margin-top: 30px;
+    display: flex;
+}
+.h-image1{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/c-heli-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.h-image2{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/c-heli2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.h-image3{
+    margin-right: 30px;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background: url(../images/c-heli3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.book-link{
+    margin-top: 30px;
+    background-color: #8d6914;
+    width: fit-content;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+}
+.book-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
 }
