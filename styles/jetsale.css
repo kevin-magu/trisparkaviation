@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    position: relative;
+}
+
+.page-title{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: #8d6914;
+}
+.jets-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.jet-box{
+    width: 30%;
+    height: 350px;
+    background-color: black;
+    color: white;
+}
+
+.jet-name{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.jet-photo{
+    height: 50%;
+    background-color: #8d6914;
+}
+.jet-box .pc12{
+    background: url(../images/bombardier-sale.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.jet-box .jet-specs{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+}
+.jet-box .jet-spec{
+    margin-right: 40px;
+}
+.jet-box .speed{
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+.jet-box .speed i{
+    margin-right: 3px;
+}
+.jet-description{
+    font-size: 12px;
+    margin-top: 6px;
+}
