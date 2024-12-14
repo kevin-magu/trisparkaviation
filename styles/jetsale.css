@@ -21,12 +21,17 @@ nav{
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .jet-box{
     width: 30%;
-    height: 350px;
+    height: fit-content;
     background-color: black;
     color: white;
+    padding-bottom: 20px;
+}
+.jet-content{
+    padding: 4px;
 }
 
 .jet-name{
@@ -35,10 +40,10 @@ nav{
 }
 
 .jet-photo{
-    height: 50%;
+    height: 200px;
     background-color: #8d6914;
 }
-.jet-box .pc12{
+.jet-box .bombardier{
     background: url(../images/bombardier-sale.jpg);
     background-position: top;
     background-size: cover;
@@ -64,4 +69,23 @@ nav{
 .jet-description{
     font-size: 12px;
     margin-top: 6px;
+    margin-bottom: 9px;
+}
+.jet-box .c172{
+    background: url(../images/cessna-sale.jpg);
+    background-position: center;
+    background-size: cover;   
+}
+.jet-box .pc12{
+    background: url(../images/home-pc12-salee.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+.jet-box a{
+    background-color: #8d6914;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 3px;
+    text-transform: lowercase;
 }
