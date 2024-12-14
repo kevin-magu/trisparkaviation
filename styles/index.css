@@ -22,60 +22,6 @@ body{
     position: relative;
 }
 
-nav{
-    position: absolute;
-    top: 20px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    color: #8d6914;
-    font-weight: 600;
-    width: 100%;
-}
-
-nav  img{
-   margin-right: 20px;
-   width: 250px;
-   margin-left: 10px;
-}
-
-nav ul{
-    display: flex;
-}
-nav ul a{
-    color: #8d6914;
-    margin-left: 100px;
-    text-decoration: none;
-    width: fit-content;
-}
-
-nav li{
-    list-style: none;
-    width: fit-content;
-}
-
-.menu-bar{
-    background-color: white;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    z-index: 100;
-    right: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-.menu-bar .menu-line{
-    height: 2px;
-    width: 70%;
-    background-color: #8d6914;
-    margin: 2px;
-    z-index: 100;
-    border-radius: 10px;
-}
 .white-overlay{
   position: absolute;
   bottom: 0; /* Start from the bottom */
@@ -231,8 +177,59 @@ nav li{
 /*cargo services*/
 .cargo-s{
     background: url(../images/home-cargo-s.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
+}
+
+/*safari-flight-services*/
+.safari-flight-s{
+    background: url(../images/home-safari-s.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.featured-safari{
+    margin-top: 30px;
+    height: 350px;
+    width: 100%;
+    background-color: #8d6914;
+    background: url(../images/home-safari-f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.featured-safari .section1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.featured-safari .section1 span:nth-child(2){
+    font-style: italic;
+    text-decoration: dashed;
+}
+.featured-safari .section2{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    color: white;
+}
+.featured-safari .section2 button{
+    background-color: white;
+    color: #030303;
 }
 
 
