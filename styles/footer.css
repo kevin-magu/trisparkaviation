@@ -103,3 +103,20 @@ footer .title{
     }
     
 }
+@media (max-width: 550px) {
+    footer{
+        padding: 0;
+        font-size: 14px;
+    }
+    .footer .lines{
+        margin-left: 0px;
+    }
+    .footerline2{
+        gap: 0px;
+    }
+    .footerline3{
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+
+}

@@ -12,7 +12,8 @@ nav{
 }
 .jetcharter-section{
     margin: 40px 0px 0px 50px;
-}.section-title{
+}
+.section-title{
     font-size: 40px;
     color: #8d6914;
 }
@@ -45,4 +46,27 @@ nav{
     padding: 5px;
     color: white;
     text-decoration: none;
+}
+@media (max-width: 890px) {
+    .jetcharter-section{
+        margin: 40px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-title{
+        font-size: 18px;
+    }
+    .charter-images-container{
+        flex-direction: column;
+    }
+    .charter-content{
+        width: 80%;
+    }
+    .charter-image{
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+    }
 }

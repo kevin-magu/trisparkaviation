@@ -9,10 +9,11 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .homepage{
-    height: 100vh;
+    height: 97svh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -33,7 +34,7 @@ body{
   height: 100%; /* Full height of the parent */
   background-color: white;
   z-index: 0; /* Make sure it stays below the content */
-  opacity: 40%;
+  opacity: 60%;
 }
 .hero-text{
     font-size: 55px;
@@ -48,6 +49,7 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .hero-text span{
+    margin-top: -5px;
     background-color: white;
     height: fit-content;
     font-size: 50px;
@@ -317,10 +319,33 @@ body{
     }
     .services .service-div .section2{
         width: 400px;
+        text-align: justify;
+    }
+    .featured-plane{
+        background: black;
     }
 }
 @media (max-width: 500px) {
     .hero-text, .hero-text span{
         font-size: 25px;
     }
+  
+    .hero-text, .hero-text span{
+        font-size: 20px;
+    }
+    .safari-content span{
+        font-size: 20px;
+        padding: 5px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
 }
+@media (max-width: 415px) {
+    .service-div .service-photo{
+        width: 310px;
+    }
+    .services .service-div .section2{
+        width: 310px;
+    }
+
+}
+

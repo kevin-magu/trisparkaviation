@@ -43,3 +43,23 @@ nav{
     color: white;
     text-decoration: none;
 }
+@media (max-width: 1195px) {
+    .safari-title{
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .safari-container{
+        margin: 0;
+        align-items: center;
+    }
+    .safari-picture{
+        width: 100%;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    .safari-content{
+        width: 100%;
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+    }
+}

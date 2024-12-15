@@ -11,11 +11,13 @@ body{
 nav{
     position: relative;
 }
+.cargo-content{
+    margin-left: 50px;
+}
 
 .cargo-paragraph{
     margin-top: 40px;
     width: 70%;
-    margin-left: 50px;
 }
 
 .book-cargo{
@@ -24,13 +26,13 @@ nav{
 
 .cargo-images{
     margin-top: 50px;
-    margin-left: 50px;
     display: flex;
     margin-bottom: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .c-image1{
-    margin-right: 30px;
     width: 300px;
     height: 150px;
     background-repeat: no-repeat;
@@ -40,7 +42,6 @@ nav{
 }
 
 .c-image2{
-    margin-right: 30px;
     width: 300px;
     height: 150px;
     background-repeat: no-repeat;
@@ -50,7 +51,6 @@ nav{
 }
 
 .c-image3{
-    margin-right: 30px;
     width: 300px;
     height: 150px;
     background-repeat: no-repeat;
@@ -74,6 +74,32 @@ section a{
     padding: 9px;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1015px) {
+    .cargo-content{
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cargo-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cargo-image{
+        border-radius: 5px;
+    }
+    .cargo-paragraph{
+        width: 100%;
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+    }
+    .book-cargo{
+        margin-left: 0px;
+    }
 }
 
 

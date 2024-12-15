@@ -16,11 +16,13 @@ nav{
 .jets-container{
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+    margin-left: 50px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 .jet-box{
-    width: 30%;
+    width: 400px;
     height: fit-content;
     background-color: black;
     color: white;
@@ -84,4 +86,32 @@ nav{
     font-size: 15px;
     padding: 3px;
     text-transform: lowercase;
+}
+
+
+@media (max-width: 700px) {
+    .jets-container{
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .jet-box{
+        border-radius: 5px;
+    }
+    .jet-photo{
+        border-radius: 5px;
+    }
+}
+@media (max-width: 40px) {
+    .jet-box{
+        width: 350px;
+    }
+}
+@media (max-width: 400px) {
+    .page-title{
+        font-size: 17px;
+    }
+    .jet-box{
+        width: 300px;
+    }
 }

@@ -1,3 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
 nav{
     position: absolute;
     top: 20px;
@@ -35,7 +42,7 @@ nav li{
     width: 35px;
     height: 35px;
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     right: 30px;
     border-radius: 50%;
     display: flex;
@@ -53,6 +60,41 @@ nav li{
     border-radius: 10px;
 }
 
+/*side menu start*/
+.side-menu{
+    border-right: none;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    position: absolute;
+    z-index: 200;
+    right: -400px;
+    top: 12vh;
+    background-color: white;
+    color: #8d6914;
+    border: 1px solid #8d6914;
+    border-right: none;
+}
+.side-menu ul a{
+    color: #8d6914;
+    text-decoration: none;
+    list-style: none;
+}
+.side-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+/*side menu end*/
+
+
+
 /*additional*/
 .page-title{
     margin-top: 30px;
@@ -67,7 +109,22 @@ nav li{
         display: none;
     }
 }
+@media (max-width: 700px) {
+    .page-title{
+        font-size: 25px;
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+        margin-top: 60px;
+    }
+}
 
 @media (max-width: 500px) {
-
+    nav img{
+        width: 100px;
+    }
+    .side-menu{
+        width: 320px;
+    }
+    
 }
