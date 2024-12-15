@@ -38,8 +38,7 @@ footer .title{
 }
 .footerline2{
     display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    gap: 90px;
     flex-wrap: wrap;
 }
 .footerline2 .icons{
@@ -91,6 +90,7 @@ footer .title{
         flex-direction: column;
         align-content: flex-start;
         justify-content: space-evenly;
+        gap: 20px;
     }
     .footerline2 .contacts{
         margin-top: 40px;

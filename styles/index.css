@@ -138,7 +138,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    width: 100%;
 }
 
 .featured-title{
@@ -158,15 +158,18 @@ body{
     font-weight: bold;
     color: #8d6914;
 }
+
 .featured-plane img{
     transform: scaleX(-1);
 }
+
 .plane-specs{
     display: flex;
     flex-direction: column;
     font-weight: 500;
     color: white;
 }
+
 .plane-specs span{
     margin-top: 6px;
 }
@@ -202,6 +205,7 @@ body{
 
 .featured-safari{
     margin-top: 30px;
+    font-size: 40px;
     height: 350px;
     width: 100%;
     background-color: #8d6914;
@@ -209,9 +213,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    position: relative;
 }
 .featured-safari .section1{
     color: white;
@@ -220,29 +221,37 @@ body{
     width: fit-content;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
     font-weight: bold;
-    margin-left: 20px;
+    width: fit-content;
 }
 .featured-safari .section1 span:nth-child(2){
     font-style: italic;
     text-decoration: dashed;
 }
 .featured-safari .section2{
-    font-size: 50px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     width: fit-content;
     justify-content: center;
-    position: absolute;
-    right: 20px;
+    align-items: center;
     color: white;
 }
-.featured-safari .section2 button{
-    background-color: white;
-    color: #030303;
+.featured-safari a{
+    width: fit-content;
+    font-size: 16px;
 }
+.safari-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 /*responsiveness*/
 @media (max-width: 1300px) {
@@ -253,13 +262,28 @@ body{
         flex-direction: column;
         width: 100%;
     }
+    .safari-content .section1,.safari-content .section2{
+        position: relative;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .safari-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
     .service-div{
         font-size: 14px;
         flex-direction: column;
-        
+        margin-top: 50px;
         align-items: center;
     }
-    .services .section2{
+    .services .service-div .section2{
         width: 600px;
         margin-left: none;
     }
@@ -269,14 +293,9 @@ body{
 }
 
 @media (max-width: 1060px) {
-    .featured-plane{
-        height: fit-content;
-    }
     .featured-plane-content{
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center;
-        flex-direction: column;
+       flex-direction: column;
+        height: 100%;
     }
     .featured-plane-content .plane-name{
         color: white;
@@ -284,7 +303,24 @@ body{
     .featured-plane img{
         width: 200px;
     }
+    .plane-specs{
+        text-align: center;
+    }
 }
-
-
-
+@media (max-width: 750px) {
+    .hero-text, .hero-text span{
+        font-size: 30px;
+    }
+    .service-div .service-photo{
+        width: 400px;
+        height: 200px;
+    }
+    .services .service-div .section2{
+        width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .hero-text, .hero-text span{
+        font-size: 25px;
+    }
+}
