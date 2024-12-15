@@ -60,3 +60,10 @@ nav li{
     font-size: 40px;
     color: #8d6914;
 }
+
+/*responsiveness*/
+@media (max-width: 1215px) {
+    nav ul li{
+        display: none;
+    }
+}

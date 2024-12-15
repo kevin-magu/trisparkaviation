@@ -11,7 +11,6 @@ footer a{
 
 footer .lines{
     display: flex;
-    align-items: last baseline;
     margin-top: 50px;
     margin-left: 50px;
 }
@@ -39,8 +38,9 @@ footer .title{
 }
 .footerline2{
     display: flex;
-    justify-content: baseline;
-    
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
 }
 .footerline2 .icons{
 
@@ -53,24 +53,21 @@ footer .title{
 .footerline2 .contacts{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    margin-left: 70px;
 }
 .footerline2 .quick-links{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    margin-left: 100px;
 }
 
 .gstream {
-    margin-left: 80px;
+    margin-top: -50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .gstream img{
-    width: 450px;
+    
+    width: 200px;
 }
 .gstream a{
     padding: 6px;
@@ -83,4 +80,26 @@ footer .title{
 .footerline3{
     font-weight: 500;
     color: #8d6914;
+}
+
+
+/*responsiveness*/
+
+@media (max-width: 1215px) {
+    
+    .footerline2{
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-evenly;
+    }
+    .footerline2 .contacts{
+        margin-top: 40px;
+    }
+    .footerline2 .quick-links{
+        margin-top: 40px;
+    }
+    .gstream{
+        margin-top: 40px;
+    }
+    
 }

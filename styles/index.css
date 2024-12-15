@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+/*      */
+    /* border: 1px solid red; */
+    
 }
 
 body{
@@ -60,7 +63,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .section-title{
@@ -78,6 +80,7 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+
 .service-title{
     background-color: #8d6914;
     width: fit-content;
@@ -103,14 +106,20 @@ body{
     margin-top: 47px;
     width: 40%;
 }
-.section2 button{
+.section2 p{
+    margin-bottom: 30px;
+}
+.section2 a{
     padding: 7px;
     margin-top: 30px;
     background-color: #8d6914;
     border: none;
     color: white;
     cursor: pointer;
+    margin-top: 30px;
 }
+
+
 .section2 a{
     text-decoration: none;
     color: white;
@@ -121,7 +130,6 @@ body{
     height: 350px;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     background: linear-gradient(to left, #030303 20%, #dbd8d5 80%);
 }
@@ -235,5 +243,48 @@ body{
     background-color: white;
     color: #030303;
 }
+
+/*responsiveness*/
+@media (max-width: 1300px) {
+    .services{
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .service-div{
+        font-size: 14px;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .services .section2{
+        width: 600px;
+        margin-left: none;
+    }
+    .jet-charter, .cargo-services{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1060px) {
+    .featured-plane{
+        height: fit-content;
+    }
+    .featured-plane-content{
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+    }
+    .featured-plane-content .plane-name{
+        color: white;
+    }
+    .featured-plane img{
+        width: 200px;
+    }
+}
+
 
 
