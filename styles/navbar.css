@@ -1,8 +1,8 @@
 html{
-    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
-    overflow-x: hidden;
+
 }
 
 nav{
@@ -64,14 +64,14 @@ nav li{
 .side-menu{
     border-right: none;
     height: 80vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 380px;
     position: absolute;
     z-index: 200;
-    right: -400px;
+    right: 0px;
     top: 12vh;
     background-color: white;
     color: #8d6914;
@@ -82,11 +82,16 @@ nav li{
     color: #8d6914;
     text-decoration: none;
     list-style: none;
+    width: fit-content;
 }
 .side-menu ul{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    width: fit-content;
+}
+.sidemenu-container{
+    overflow-x: hidden;
 }
 
 
@@ -125,6 +130,11 @@ nav li{
     }
     .side-menu{
         width: 320px;
+        height: 60vh;
     }
+    .side-menu ul{
+        gap: 30px;
+    }
+
     
 }
